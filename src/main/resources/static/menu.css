@@ -1,0 +1,198 @@
+body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        header .logo img {
+            height: 50px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover, header nav ul li a.active {
+            color: #d9534f;
+        }
+
+        #orderNow {
+            background-color: #d9534f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        #orderNow:hover {
+            background-color: #c9302c;
+            transform: scale(1.05);
+        }
+
+        .menu {
+            display: flex;
+            margin-top: 80px;
+        }
+
+        .menu-categories {
+            width: 20%;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            position: sticky;
+            top: 80px;
+            height: calc(100vh - 80px);
+            overflow-y: auto;
+        }
+
+        .menu-categories h2 {
+            margin-bottom: 20px;
+            color: #d9534f;
+            font-size: 1.5rem;
+        }
+
+        .menu-categories ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-categories ul li {
+            margin-bottom: 15px;
+        }
+
+        .menu-categories ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .menu-categories ul li a:hover {
+            color: #d9534f;
+        }
+
+        #menu-items {
+            width: 80%;
+            padding: 20px;
+        }
+
+        #menu-items h2 {
+            color: #d9534f;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(250px, 1fr));
+            gap: 20px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding: 10px 0;
+        }
+
+        .menu-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+            text-align: center;
+            flex: 0 0 auto;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .menu-item h3 {
+            margin: 15px 0 10px;
+            color: #333;
+            font-size: 1.2rem;
+        }
+
+        .menu-item p {
+            color: #666;
+            font-size: 0.9rem;
+            margin: 0 10px 15px;
+            line-height: 1.4;
+        }
+
+        .menu-item .price {
+            background-color: #d9534f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            transition: background-color 0.3s;
+        }
+
+        .menu-item .price:hover {
+            background-color: #c9302c;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .menu-grid::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .menu-grid::-webkit-scrollbar-thumb {
+            background-color: #d9534f;
+            border-radius: 4px;
+        }
